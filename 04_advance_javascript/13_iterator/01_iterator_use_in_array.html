@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterators use in Array</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Iterators
+        - It is use to
+        (1) Array
+        (2) String
+        (3) Object
+
+        - Property
+        (1) value   - It is give array, string and object value
+        (2) done    - It is return true and false Value
+        
+        */
+
+        let arr = [1, "Darshan Virani", "JavaScript"];
+
+        console.log(arr);
+        console.log(typeof arr);
+
+        // let arr2 = arr[Symbol.iterator];
+        // console.log(typeof arr2);            // function
+
+        let arr2 = arr[Symbol.iterator]();
+        console.log(arr2);
+
+        // console.log(arr2.next());
+        // console.log(arr2.next());
+        // console.log(arr2.next());
+        // console.log(arr2.next());
+
+
+        // console.log(arr2.next());
+        // arr2.next();                         // skip array value
+        // console.log(arr2.next());
+        // console.log("This is iterator1");
+        // console.log("This is iterator2");
+        // console.log("This is iterator3");
+        // console.log(arr2.next());
+
+
+        // console.log(`>> Roll No : ${arr2.next().value}`);
+        // console.log(`>> Name : ${arr2.next().value}`);
+        // console.log(`>> Language : ${arr2.next().value}`);
+        // console.log(`>> other : ${arr2.next().value}`);
+
+
+        // console.log(`>> Roll No : ${arr2.next().done}`);
+        // console.log(`>> Name : ${arr2.next().done}`);
+        // console.log(`>> Language : ${arr2.next().done}`);
+        // console.log(`>> other : ${arr2.next().done}`);
+
+
+        let result = arr2.next();
+        while(!result.done){
+            console.log(result.value);
+            result = arr2.next();
+        }   
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloneNode</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <ul class="list1">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Forth</li>
+        </ul>
+        <ul class="list2">
+            <li>First</li>
+            <li>Second</li>
+        </ul>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) cloneNode
+        
+        */
+
+        let selectElement = document.querySelector(".list1").children[2];
+        let cloneElement = selectElement.cloneNode(true);
+
+        console.log(cloneElement);
+
+        let addElement = document.querySelector(".list2");
+        addElement.appendChild(cloneElement);
+        
+
+        // let selectElement = document.querySelector(".list1");
+        // let cloneElement = selectElement.cloneNode(true);
+        // console.log(cloneElement);
+        // let addElement = document.querySelector(".list2");
+        // addElement.appendChild(cloneElement);
+
+    </script>
+</body>
+</html>

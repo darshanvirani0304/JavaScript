@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+        <h1 id="text">Lorem ipsum dolor sit amet</h1>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        let text = document.getElementById("text");
+
+        text.innerHTML = "This is getElementById";
+        text.innerText = "This is InnerText";
+        text.textContent = "This is textContent";
+
+        text.style.backgroundColor = "lightblue";
+        text.style.borderRadius = "20px";
+        text.style.textAlign = "center";
+        text.style.padding = "10px"
+    </script>
+</body>
+</html>

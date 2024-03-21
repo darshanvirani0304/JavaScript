@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <h1 id="heading_id" class="heading_class">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <ul>
+            <li class="list">First</li>
+            <li class="list">Second</li>
+            <li class="list">Third</li>
+            <li class="list">Forth</li>
+            <li class="list">Fifth</li>
+        </ul>
+
+        <input type="text" name="" id="">
+        <input type="submit" value="Submit">
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        // let heading = document.querySelector("#heading_id");
+        // let heading = document.querySelector(".heading_class");
+        let heading = document.querySelector("h1");
+
+        heading.innerHTML = "This is querySelector"
+        heading.style.backgroundColor = "lightblue";
+        heading.style.borderRadius = "10px";
+        heading.style.textAlign = "center";
+        heading.style.padding = "10px";
+
+        // let list = document.querySelector("li:first-Child");
+        // let list1 = document.querySelector("li:last-Child");
+        // list1.style.backgroundColor = "lightblue";
+
+        let list = document.querySelector(".list:nth-child(1)");
+        list.style.backgroundColor = "lightblue";
+        list = document.querySelector(".list:nth-child(2)");
+        list.style.backgroundColor = "pink";
+        list = document.querySelector(".list:nth-child(3)");
+        list.style.backgroundColor = "yellow";
+        list = document.querySelector(".list:nth-child(4)");
+        list.style.backgroundColor = "lightgreen";
+        list = document.querySelector(".list:nth-child(5)");
+        list.style.backgroundColor = "lightgrey";
+
+        let input = document.querySelector("input");
+        input.value = "Darshan Virani";
+
+        let btn = document.querySelector("input[type='submit']")
+        btn.value = "Send";
+    </script>
+</body>
+</html>

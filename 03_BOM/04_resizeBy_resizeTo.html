@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window moveBy and moveTo</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <button type="button" onclick="openWin()">Open Window</button>
+    <button type="button" onclick="closeWin()">Close Window</button>
+    <button type="button" onclick="resizeByWin()">resizeBy</button>
+    <button type="button" onclick="resizeToWin()">resizeTo</button>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /*
+        
+        (1) resizeBy() - position relative - (x,y)      - continue (50,50) + (250,250) = (300,300)
+        (2) resizeTo() - position absolute - (x,y)      - new size (250,250)
+        
+        */
+
+        let win;
+
+        // open
+        function openWin(){
+            win = window.open("", "", "top=50, left=50, width=50, height=50");
+        }
+
+        // close
+        function closeWin(){
+            win.close();
+        }
+
+        // resizeBy - relative
+        function resizeByWin(){
+            win.resizeBy(250, 250);
+        }
+
+        // resizeTo - absolute
+        function resizeToWin(){
+            win.resizeTo(250, 250);
+        }
+    </script>
+</body>
+</html>

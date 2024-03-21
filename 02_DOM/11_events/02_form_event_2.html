@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event 2</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 400px;
+            border: 2px solid #e6f2ff;
+            border-radius: 20px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        input, textarea, select{
+            width: 100%;
+            outline: none;
+            border: 2px solid #66b3ff;
+            border-radius: 10px;
+            padding: 6px;
+            margin: 10px 0px;
+        }
+
+        input[type=submit]{
+            background-color: #66b3ff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <!-- onsubmit -->
+        <form action="" onsubmit="submitfun()">
+            <div class="form">
+                <!-- onfoucs, onblur, oninput, onselect, oninvalid -->
+                <label for="name">Name</label>
+                <input type="text" name="yname" id="name" onfocus="focusfun(this)" onblur="blurfun(this)" onselect="selectfun()" required oninvalid="alert('Please, Enter your Name')">
+            </div>
+            <!-- onfocus, onblur -->
+            <div class="form">
+                <label for="password">Password</label>
+                <input type="password" name="pword" id="password" onfocus="focusfun(this)" onblur="blurfun(this)">
+            </div>
+            <div class="form">
+                <!-- oninput -->
+                <label for="oninput">oninput</label>
+                <textarea name="input" id="oninput" cols="30" rows="3" oninput="inputfun(this)"></textarea>
+            </div>
+            <div class="form">
+                <!-- onchange -->
+                <label for="onchange">onchange</label>
+                <textarea name="change" id="onchange" cols="30" rows="3" onchange="changefun(this)"></textarea>
+            </div>
+            <div class="form">
+                <!-- onchange -->
+                <label for="onchange2">onchange</label>
+                <select name="change" id="onchange2" onchange="changefun(this)">
+                    <option value="first">First</option>
+                    <option value="second">Second</option>
+                    <option value="third">Third</option>
+                </select>
+            </div>
+            <div class="form">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div id="text"></div>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Form Event
+        (1) Focus       -> onfocus
+        (2) Blur        -> onblur
+        (3) input       -> oninput              - It is use in input and text area
+        (4) change      -> onchange
+        (5) select      -> onselect
+        (6) submit      -> onsubmit
+        (7) invalid     -> invalid              - It is work "required" key word in any form tag
+          
+        */
+
+        // focus
+        function focusfun(element){
+            element.style.backgroundColor = "#80bfff";
+        }
+
+        // blur
+        function blurfun(element){
+            element.style.backgroundColor = "#cce6ff";
+        }
+
+        // input
+        function inputfun(element){
+            let x = element.value;
+            document.getElementById("text").innerHTML = x;
+        }
+
+        // change
+        function changefun(element){
+            let x = element.value;
+            document.getElementById("text").innerHTML = x;
+        }
+
+        // select
+        function selectfun(){
+            console.log("You have Select any Text.");
+        }
+
+        // submit
+        function submitfun(){
+            // console.log("You have a Submit Form.");
+            // alert("You have a Submit Form");
+            let text = document.getElementById("name").value;
+            alert("Hello , " + text);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol Data Type</title>
+</head>
+
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Symbol Data Type
+        - It is use to unique value
+        
+        */
+
+        let a = Symbol();
+        console.log(a);
+
+        let fname = Symbol("Darshan Virani");
+        console.log(fname);
+        console.log(`>> Data Type is : ${typeof fname}`);
+
+        // Compare Symbol
+        let name1 = Symbol("Darshan Virani");
+        let name2 = Symbol("Darshan Virani");
+        console.log(`Compare Symbol Datatype (== ) >> ${name1 == name2}`);            // false
+        console.log(`Compare Symbol Datatype (===) >> ${name1 === name2}`);           // false
+
+        // Compare Other Data Type
+        let strName1 = "Darshan Virani";
+        let strName2 = "Darshan Virani";
+        console.log(`Compare String Data Type (== ) >> ${strName1 == strName2}`);      // true
+        console.log(`Compare String Data Type (===) >> ${strName1 === strName2}`);     // true
+
+
+        /* 
+        
+        Symbol Data Type is Not work Directaly in the DOM
+        - You Can use below Method
+        (1) toString()      - It is use to convert Symbol to String
+        (2) description     - It is use to print Symbol Value
+ 
+        */
+
+        let fname1 = Symbol("Darshan Virani");
+        // alert(fname1);                              // TypeError: Cannot convert a Symbol value to a string
+        document.write(fname1.toString());             // convert string
+        document.write("<br>");
+        document.write(fname.description);              // use to print Symbol value
+        console.log(fname.description);
+    </script>
+</body>
+
+</html>

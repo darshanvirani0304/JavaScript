@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "joke": "Why don't scientists trust atoms? Because they make up everything."
+    },
+    {
+        "id": 2,
+        "joke": "Parallel lines have so much in common. It's a shame they'll never meet."
+    },
+    {
+        "id": 3,
+        "joke": "I'm on a seafood diet. I see food, and I eat it."
+    },
+    {
+        "id": 4,
+        "joke": "Why did the scarecrow win an award? Because he was outstanding in his field!"
+    },
+    {
+        "id": 5,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 6,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 7,
+        "joke": "What did one wall say to the other wall? I'll meet you at the corner!"
+    },
+    {
+        "id": 8,
+        "joke": "Why don't skeletons fight each other? They don't have the guts."
+    },
+    {
+        "id": 9,
+        "joke": "I'm reading a book on anti-gravity. It's impossible to put down!"
+    },
+    {
+        "id": 10,
+        "joke": "How does a penguin build its house? Igloos it together!"
+    },
+    {
+        "id": 11,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 12,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 13,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 14,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 15,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 16,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 17,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 18,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 19,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 20,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 21,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 22,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 23,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 24,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 25,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 26,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 27,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 28,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 29,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 30,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 31,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 32,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 33,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 34,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 35,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 36,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 37,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 38,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 39,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 40,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 41,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 42,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 43,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 44,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 45,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 46,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 47,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 48,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 49,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 50,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 51,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 52,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 53,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 54,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 55,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 56,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 57,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 58,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 59,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 60,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 61,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 62,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 63,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 64,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 65,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 66,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 67,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 68,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 69,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 70,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 71,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 72,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 73,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 74,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 75,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 76,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 77,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 78,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 79,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 80,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 81,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 82,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 83,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 84,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 85,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 86,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 87,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 88,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 89,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 90,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 91,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 92,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 93,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 94,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 95,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 96,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 97,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 98,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 99,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 100,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 101,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 102,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 103,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 104,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 105,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 106,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 107,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 108,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 109,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 110,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 111,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 112,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 113,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 114,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 115,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 116,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 117,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 118,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 119,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 120,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 121,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 122,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 123,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 124,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 125,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 126,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 127,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 128,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 129,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 130,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 131,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 132,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 133,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 134,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 135,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 136,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 137,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 138,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 139,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 140,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 141,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 142,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 143,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 144,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 145,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 146,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 147,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 148,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 149,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 150,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 151,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 152,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 153,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 154,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 155,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 156,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 157,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 158,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 159,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 160,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 161,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 162,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 163,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 164,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 165,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 166,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 167,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 168,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 169,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 170,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 171,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 172,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 173,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 174,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 175,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 176,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 177,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 178,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 179,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 180,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 181,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 182,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 183,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 184,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 185,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 186,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 187,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 188,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 189,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 190,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 191,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 192,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    },
+    {
+        "id": 193,
+        "joke": "I used to play piano by ear, but now I use my hands."
+    },
+    {
+        "id": 194,
+        "joke": "What's a skeleton's least favorite room in the house? The living room."
+    },
+    {
+        "id": 195,
+        "joke": "I told my wife she was drawing her eyebrows too high. She looked surprised."
+    },
+    {
+        "id": 196,
+        "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+        "id": 197,
+        "joke": "I used to be a baker, but I couldn't make enough dough."
+    },
+    {
+        "id": 198,
+        "joke": "I'm friends with all electricians. We have such great current connections."
+    },
+    {
+        "id": 199,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 200,
+        "joke": "What's orange and sounds like a parrot? A carrot."
+    }
+]

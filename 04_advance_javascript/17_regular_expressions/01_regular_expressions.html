@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expressions</title>
+</head>
+
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        // let reg = /darshan/g;
+        // console.log(reg);
+        // console.log(reg.source);
+
+        /* 
+        
+        flag -
+        (1) g - global
+        (2) i - case insensitive
+
+        method -
+        (1) exec()
+        (2) test()
+        (3) match()
+        (4) search()
+        (5) replace()
+        
+        */
+
+
+
+
+        // (1) exec() - This function will return an array for match or null for no match
+        // // let reg = /darshan/;
+        // let reg = /darshan/g;                               // g - global
+        // // let reg = /Darshan/i;                               // i - case insensitive
+        // let text = "my name is darshan virani and also darshan virani";
+
+        // let result = reg.exec(text);
+        // console.log(result);
+        // console.log(result.input);
+        // console.log(result.index);
+
+        // result = reg.exec(text);
+        // console.log(result);
+        // result = reg.exec(text);
+        // console.log(result);
+
+
+
+        // // (2) test() - return true and false
+        // let reg = /darshan/g;
+        // // let reg = /Darshan/g;
+        // // let reg = /darshan/i;
+        // let text = "my name is darshan virani and also darshan virani";
+
+        // let result = reg.test(text);
+
+        // console.log(result);
+        // if(result){
+        //     console.log(result.input);
+        //     console.log(result.index);
+        // }
+
+
+
+        // (3) match() - It will return array of result or null
+        // let reg = /darshan/g;
+        // // let reg = /Darshan/g;
+        // // let reg = /darshan/i;
+        // let text = "my name is darshan virani and also darshan virani";
+
+        // let result = text.match(reg);                    // reg.match(text) -- this is wrong!!! ❌       
+        // console.log(result);
+        // console.log(result.input);                       // it work with /i
+        // console.log(result.index);                       // it work with /i
+
+
+
+        // (4) search - Return index of first match else -1
+        // let reg = /darshan/g;
+        // // let reg = /Darshan/g;
+        // // let reg = /darshan/i;
+        // let text = "my name is darshan virani and also darshan virani";
+
+        // let result = text.search(reg);                   // reg.match(text) -- this is wrong!!! ❌
+        // console.log(result);
+
+
+
+        // (5) replace - return new replace string with all the replacement (if no global flag giving, first match will be replaced)
+        // let reg = /darshan/;
+        let reg = /darshan/g;
+        // let reg = /Darshan/g;
+        // let reg = /darshan/i;
+        let text = "my name is darshan virani and also darshan virani";
+
+        let result = text.replace(reg, "DARSHAN");          // reg.match(text) -- this is wrong!!! ❌
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

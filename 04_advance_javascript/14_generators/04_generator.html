@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Generator
+        
+        */
+
+        function *generator_fun(){
+            yield "First";
+            yield "Second";
+            yield "Third";
+            yield "Forth";
+            yield "Fifth";
+        }
+
+        let g = generator_fun();
+        console.log(g.next());
+        console.log(g.next());
+        console.log(g.next());
+        console.log([...g]);                        // using spread opeator  - spread operator is create array all remaing value
+
+
+        console.log("-------------------- Use Return Keyword --------------------");
+
+        /* 
+        
+        using return keyword
+        
+        */
+
+        function *generator_fun2(){
+            yield "First";
+            yield "Second";
+            yield "Third";
+            yield "Forth";
+            yield "Fifth";
+        }
+
+        let g2 = generator_fun2();
+        console.log(g2.next().value);
+        console.log(g2.next().value);
+        console.log(g2.return("Ending Now"));
+        console.log(g2.next().value);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>priviousElementSibling, previousSibling, nextElementSibling and nextSibling</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .main{
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-gap: 20px;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .box{
+            background-color: pink;
+            width: 100%;
+            height: 200px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <div class="main">
+            <div class="box first">First</div>
+            <div class="box second">Second</div>
+            <div class="box thrid">Third</div>
+            <div class="box forth">Forth</div>
+            <div class="box fifth">Fifth</div>
+        </div>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) previousElementSibling
+        (2) priviousSibling
+        (3) nextElementSibling
+        (4) nextSibling
+        
+        */
+
+
+        /* 
+        
+        (1) priviousElementSibling
+        
+        */
+
+        let pes = document.querySelector(".thrid").previousElementSibling;
+        console.log(">> priviousElementSibling :", pes);
+
+        pes = document.querySelector(".second").previousElementSibling;
+        console.log(">> priviousElementSibling :", pes);
+
+        // pes = document.querySelector(".fisrt").previousElementSibling;       // --> return null
+        // console.log(">> priviousElementSibling :", pes);
+
+        /* 
+        
+        (2) priviousSibling
+        
+        */
+
+        let ps = document.querySelector(".thrid").previousSibling;
+        console.log(">> previousSibling :", ps);
+
+        ps = document.querySelector(".second").previousSibling;
+        console.log(">> previousSibling :", ps);
+
+        ps = document.querySelector(".first").previousSibling;
+        console.log(">> previousSibling :", ps);
+
+        /* 
+        
+        (3) nextElementSibling
+        
+        */
+
+        let nes = document.querySelector(".thrid").nextElementSibling;
+        console.log(">> nextElementSibling :", nes);
+
+        nes = document.querySelector(".forth").nextElementSibling;
+        console.log(">> nextElementSibling :", nes);
+
+        nes = document.querySelector(".fifth").nextElementSibling;
+        console.log(">> nextElementSibling :", nes);
+
+        /* 
+        
+        (4) nextSibling
+        
+        */
+
+        let ns = document.querySelector(".thrid").nextSibling;
+        console.log(">> nextSibling : ", ns);
+
+        ns = document.querySelector(".forth").nextSibling;
+        console.log(">> nextSibling : ", ns);
+
+        ns = document.querySelector(".fifth").nextSibling;
+        console.log(">> nextSibling : ", ns);
+
+
+    </script>
+</body>
+</html>

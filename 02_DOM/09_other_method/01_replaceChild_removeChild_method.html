@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replaceChild and removeChild Method</title>
+</head>
+<body>
+    <!--------------------------- HTML --------------------------->
+    <ul class="list">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Forth</li>
+    </ul>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) replaceChild
+        (2) removeChild
+         
+        */
+
+        // >>>>>>>>>> removeChild <<<<<<<<<<
+        let newElement = document.createElement("li");
+        let newText = document.createTextNode("Replaced List Tag");
+        newElement.appendChild(newText);
+        console.log(newElement);
+        
+        let target = document.querySelector(".list");
+        let oldElement = target.children[0];
+        console.log(oldElement);
+
+        target.replaceChild(newElement, oldElement);
+
+        // >>>>>>>>>> removeChild <<<<<<<<<<
+        let target2 = document.querySelector(".list");
+        let oldElement2 = target.children[1];
+
+        target.removeChild(oldElement2);
+
+    </script>
+</body>
+</html>

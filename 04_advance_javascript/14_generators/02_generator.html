@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Generator
+        
+        */
+
+        function *generator_fun(){
+            let num = 100;
+            while(true){
+                yield(num++);
+                if(num === 110){
+                    break;
+                }
+            }
+        }
+
+        let g = generator_fun();
+
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+
+        for(let value of g){
+            console.log(value);
+        }
+
+    </script>
+</body>
+</html>

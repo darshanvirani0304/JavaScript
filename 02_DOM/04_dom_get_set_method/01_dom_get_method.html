@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Get Method</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <h1 id="headingId" class="heaingClass" style="border: 2px solid yellow;" onclick="getMethod()">This is Get Method</h1>
+        <p id="paraId" class="paraClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni amet aliquid ipsa, excepturi similique consectetur?</p>
+    </div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Get Method
+        (1) innerHTML                       - return html tag
+        (2) innerText                       - return tag
+        (3) getAttribute                    - return attribute (id, class, style, onclick) value (ex - id="heading")
+        (4) getAttributeNode                - return attribut name with value (ex - id="heading")
+        (5) attributes                      - return all attribute value and specific values
+        
+        */
+
+        /* 
+        
+        innerHTML
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>> innerHTML <<<<<<<<<<<<<<<")
+        let html1 = document.querySelector(".container").innerHTML;
+        console.log(html1);
+
+        /* 
+        
+        innerText
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>> innerText <<<<<<<<<<<<<<<")
+        let text1 = document.querySelector(".container").innerText;
+        console.log(text1);
+
+        /* 
+        
+        getAttribute - return html attribute value
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>> getAttribute <<<<<<<<<<<<<<<")
+        let getAttr = document.getElementById("headingId").getAttribute("id");
+        console.log(getAttr);
+        getAttr = document.getElementById("headingId").getAttribute("class");
+        console.log(getAttr);
+        getAttr = document.getElementById("headingId").getAttribute("style");
+        console.log(getAttr);
+        getAttr = document.getElementById("headingId").getAttribute("onclick");
+        console.log(getAttr);
+
+        /* 
+        
+        getAttributeNode - return attribute name with value
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>> getAttributeNode <<<<<<<<<<<<<<<")
+        let getAttrVal = document.getElementById("headingId").getAttributeNode("id");
+        console.log(getAttrVal);
+        getAttrVal = document.getElementById("headingId").getAttributeNode("class");
+        console.log(getAttrVal);
+        getAttrVal = document.getElementById("headingId").getAttributeNode("style");
+        console.log(getAttrVal);
+        getAttrVal = document.getElementById("headingId").getAttributeNode("onclick");
+        console.log(getAttrVal);
+
+        getAttrVal = document.getElementById("headingId").getAttributeNode("id").value;
+        console.log(getAttrVal);
+        getAttrVal = document.getElementById("headingId").getAttributeNode("class").value;
+        console.log(getAttrVal);
+        getAttrVal = document.getElementById("headingId").getAttributeNode("style").value;
+        console.log(getAttrVal);
+        getAttrVal = document.getElementById("headingId").getAttributeNode("onclick").value;
+        console.log(getAttrVal);
+
+
+        /* 
+        
+        attributs - return attribute name and value
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>> attributes <<<<<<<<<<<<<<<")
+
+        let attr = document.getElementById("headingId").attributes[0];
+        console.log(attr);
+        attr = document.getElementById("headingId").attributes[1];
+        console.log(attr);
+        attr = document.getElementById("headingId").attributes[2];
+        console.log(attr);
+        attr = document.getElementById("headingId").attributes[3];
+        console.log(attr);
+        
+        
+    </script>
+</body>
+</html>

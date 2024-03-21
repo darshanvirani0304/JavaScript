@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Mode</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Strect Mode
+        - The JavaScript provides "use strict"; expression to enable the strict mode. 
+        - If there is any silent error or mistake in the code, it throws an error.
+        - syntex error
+
+        */
+
+        // "use strict";
+
+        // a = "Darshan Virani";           // not use var/let/const -> and throw arror
+        // console.log(a);
+
+
+        a = 10;
+
+        // function fun(){
+        //     "use strict";
+        //     b = 20;
+        // }
+        // fun();
+
+
+        function add(a, b, b){
+            "use strict";
+            console.log(a + b + b); // SyntaxError: Duplicate parameter name not allowed in this context
+        }
+
+        add(10,20,30);
+
+
+
+
+    </script>
+
+</body>
+</html>

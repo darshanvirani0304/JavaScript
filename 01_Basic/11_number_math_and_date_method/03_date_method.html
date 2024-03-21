@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time Methof</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        >>> Date Method
+        >> Get Method
+        (1) toDateString()
+        (2) getDay()
+        (3) getDate()
+        (4) getMonth()
+        (5) getFullYear()
+        (6) getHours()
+        (7) getMinutes()
+        (8) getSecond()
+        (9) getMilliseconds()
+
+        >> Set Method
+        (1) setDate()
+        (2) setFullYear()
+        (3) setHours()
+        (4) setMilliseconds()
+        (5) setMinutes()
+        (6) setMonth()
+        (7) setSecond()  
+        
+        */
+
+        let now = new Date();
+        document.write("<b>Now Date : </b>", now);
+        document.write("<br>");
+
+        // toDateString()
+        document.write("<b>toDateString : </b>", now.toDateString());
+        document.write("<br>");
+
+        /* 
+        
+        >>>> Get Method <<<<
+        
+        */
+
+        // getFullYear()
+        document.write("<b>getFullYear : </b>", now.getFullYear());
+        document.write("<br>");
+        
+        // getMonth()
+        document.write("<b>getMonth : </b>", now.getMonth());
+        document.write("<br>");
+        
+        // getDate()
+        document.write("<b>getDate : </b>", now.getDate());
+        document.write("<br>");
+
+        //getHours()
+        document.write("<b>getHours : </b>", now.getHours());
+        document.write("<br>");
+
+        // getMinutes()
+        document.write("<b>getMinutes : </b>", now.getMinutes());
+        document.write("<br>");
+
+        // getSeconds()
+        document.write("<b>getSeconds : </b>", now.getSeconds());
+        document.write("<br>");
+
+        // getMilliSeconds
+        document.write("<b>getMilliseconds : </b>", now.getMilliseconds());
+        document.write("<br>");
+
+        /* 
+        
+        >>>> Set Method <<<<b
+        
+        */
+
+        let now2 = new Date("2023-07-11");
+        document.write("<b>Now Date : </b>", now2);
+        document.write("<br>");
+
+        // setFullYear()
+        now.setFullYear(2023, 7, 11)
+        document.write("<b>setFullYear : </b>", now);
+        document.write("<br>");
+        
+        // setMonth()
+        now.setMonth(7)
+        document.write("<b>setMonth : </b>", now);
+        document.write("<br>");
+        
+        // setDate()
+        now.setDate(11)
+        document.write("<b>setDate : </b>", now);
+        document.write("<br>");
+
+        //setHours()
+        now.setHours(12)
+        document.write("<b>setDate : </b>", now);
+        document.write("<br>");
+
+        // setMinutes()
+        now.setMinutes(2)
+        document.write("<b>setMinutes : </b>", now);
+        document.write("<br>");
+
+        // setSeconds()
+        now.setSeconds(1)
+        document.write("<b>setSeconds : </b>",now);
+        document.write("<br>");
+
+        // setMilliSeconds
+        now.setMilliseconds(1)
+        document.write("<b>setMilliseconds : </b>", now);
+        document.write("<br>");
+        
+        document.write("<br>");
+        document.write("<b>Date is : </b>", now.getDate() + " - " + now.getMonth() + " - " + now.getFullYear());
+        document.write("<br>");
+        document.write("<b>Time is : </b>",now.getHours() + " : " + now.getMinutes() + " : " + now.getSeconds());
+
+    </script>
+</body>
+</html>

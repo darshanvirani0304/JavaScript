@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offsetTop and offsetLEft</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container{
+            width: 400px;
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 200px;
+            margin-left: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum nam eum corrupti saepe voluptatum blanditiis ea eaque sequi quod?</p>
+    <div class="container">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis eum fuga corrupti quis dolore dicta. Placeat voluptate facilis a exercitationem molestias ipsa, et quas optio harum ex suscipit provident.</p>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        offsetTop and offsetLeft
+        
+        */
+
+        let box = document.querySelector(".container");
+        console.log(box.offsetTop);
+        console.log(box.offsetLeft);
+    </script>
+</body>
+</html>

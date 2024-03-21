@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window moveBy and moveTo</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <button type="button" onclick="openWin()">Open Window</button>
+    <button type="button" onclick="closeWin()">Close Window</button>
+    <button type="button" onclick="moveByWin()">moveBy</button>
+    <button type="button" onclick="moveToWin()">moveTo</button>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /*
+        
+        (1) moveBy - position relative - (x,y)
+        (2) moveTo - position absolute - (x,y)
+        
+        */
+
+        let win;
+
+        // open
+        function openWin(){
+            win = window.open("", "", "top=50, left=50, width=50, height=50");
+        }
+
+        // close
+        function closeWin(){
+            win.close();
+        }
+
+        // moveBy - relative
+        function moveByWin(){
+            win.moveBy(100, 100);
+        }
+
+        // moveTo - absolute
+        function moveToWin(){
+            win.moveTo(100, 100);
+        }
+    </script>
+</body>
+</html>

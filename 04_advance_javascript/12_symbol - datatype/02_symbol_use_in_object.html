@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol use in Object</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        let lan = Symbol("Language");
+
+        // let obj = {
+        //     name : "Darshan Virani",
+        //     [lan] : "Javascript"
+        // }
+
+        let obj = {
+            name : "Darshan Virani"
+        }
+
+        obj[lan] = "JavaScript";
+        obj["city"] = "Surat";
+
+        console.log(obj);
+        console.log(obj.name);
+        console.log(obj.language);
+
+        /* 
+        
+        for...in loop use in the object and for...in loop is Skip Symbol data type record
+        
+        */
+
+        for(let a in obj){
+            console.log(`${a} : ${obj[a]}`);
+        }
+
+        // convert object to json
+        console.log(JSON.stringify(obj));           // It is skip Symbol datatype data
+        
+    </script>
+</body>
+</html>

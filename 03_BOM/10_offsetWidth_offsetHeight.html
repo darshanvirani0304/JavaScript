@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offsetWidth and offsetHeight</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+        .container{
+            width: 350px;
+            height: 200px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 10px;
+            border: 10px solid pink;
+            overflow: scroll;
+        }
+
+        h1, p{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel veritatis tempore, autem quo culpa delectus dolores modi neque voluptatum corrupti minima! Earum dolores molestiae quasi itaque nemo assumenda velit ea fugit, repellat magnam esse laborum impedit natus consequuntur laboriosam, mollitia nesciunt! Vel officia exercitationem earum, suscipit, nesciunt numquam nisi aliquid aperiam sapiente commodi ex quisquam sit provident. Recusandae nostrum perspiciatis doloribus repellendus iure, error nesciunt architecto dolorem est sed, vero harum sequi eaque. Molestias ipsam aperiam, voluptatibus consequatur numquam fugiat nostrum incidunt repudiandae libero error culpa quisquam? Praesentium molestiae dolor animi libero perspiciatis vel incidunt nisi, at facilis sunt porro ad quibusdam maiores voluptate numquam ipsam impedit nemo aspernatur quis molestias commodi eos? Inventore modi facere nostrum exercitationem sit, accusantium a debitis vitae at ad? Quisquam, incidunt voluptatem aspernatur doloremque eius consequatur exercitationem natus deleniti eum totam placeat magnam distinctio nulla culpa laudantium nam architecto repellendus maiores perspiciatis. Adipisci, nostrum!</p>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        offsetWidth and offsetHeight
+        - include padding, border
+        - not include margin
+        
+        */
+
+        let box = document.querySelector(".container");
+
+        let width = box.offsetWidth;
+        console.log("offsetWidth :", width);
+
+        let height = box.offsetHeight;
+        console.    log("offsetHeight :", height);
+
+    </script>
+</body>
+</html>

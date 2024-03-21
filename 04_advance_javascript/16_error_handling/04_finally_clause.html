@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finally clause</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        It is Use to Final Clean up
+        
+        */
+
+        let errorFun = () =>{
+            try{
+                console.log(">> Start try Block");
+                darshan;
+                console.log(">> End try Block");
+            }catch(error){
+                console.log(error);
+            }finally{
+                console.log(">> This is Finally Block");
+                // console.log("Close the File");
+                // console.log("Exit the Loop");
+                // console.log("Exit the Function");
+            }
+        }
+
+        errorFun();
+
+        console.log("End of the Program");
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offsetX and offsetY</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        offsetX and offsetY
+        - That is mouse event propety
+        
+        */
+
+        document.querySelector(".box").addEventListener("mousemove", function(e){
+            console.clear();
+
+            let x = e.offsetX;
+            console.log("offsetX :", x);
+
+            let y = e.offsetY;
+            console.log("offsetY :", y);
+        })
+
+
+    </script>
+</body>
+</html>

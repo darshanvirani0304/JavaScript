@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ctrl key, alt key, shift key and mata(window) key</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid rgb(240, 240, 240);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container"></div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) ctrl key (control key)
+        (2) alt key
+        (3) shift key
+        (4) meta key (window key)
+
+        It is use in mouse and keybord event
+        
+        */
+
+        let target = document.querySelector(".container");
+        target.addEventListener("click", function(keys){
+
+            // >>>> ctrl key <<<<
+            // let ctrl = keys.ctrlKey;
+            // if(ctrl){
+            //     console.log("You Pressed Control Key");
+            // }
+            // else{
+            //     console.log("You not Pressed Control Key");
+            // }
+
+            // >>>> alt key <<<<
+            // let alt = keys.altKey;
+            // if(alt){
+            //     console.log("You Pressed Alt Key");
+            // }
+            // else{
+            //     console.log("You not Pressed Alt Key");
+            // }
+
+            // >>>> shift key <<<<
+            // let shift = keys.shiftKey;
+            // if(shift){
+            //     console.log("You Pressed Shift Key");
+            // }
+            // else{
+            //     console.log("You not Pressed Shift Key");
+            // }
+
+            // // >>>> meta key <<<<
+            // let meta = keys.metaKey;
+            // if(meta){
+            //     console.log("You Pressed Meta Key");
+            // }
+            // else{
+            //     console.log("You not Pressed Meta Key");
+            // }
+
+            switch(true){
+                case keys.ctrlKey:
+                    console.log("You Pressed Control Key");
+                    break;
+                case keys.altKey:
+                    console.log("You Pressed alt Key");
+                    break;
+                case keys.shiftKey:
+                    console.log("You Pressed Shift Key");
+                    break;
+                case keys.metaKey:
+                    console.log("You Pressed Meta Key");
+                    break;
+                default:
+                    console.log("Press Contorl, Alt, Shift and Meta Key");
+            }
+        })
+
+
+
+
+    </script>
+</body>
+</html>

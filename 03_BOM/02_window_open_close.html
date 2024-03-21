@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window open() and close()</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <button type="button" onclick="openWin()">Open Window</button>
+    <button type="button" onclick="closeWin()">Close Window</button>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /*
+        
+        window open() and Close()
+        (1) open() - window.open(URL, Name, space)
+            Name - userDefind name
+                    _blank
+                    _parnet
+                    _self
+                    _top
+            space - width, height, top, left
+
+        (2) close()
+
+        */
+
+        let win;
+
+        function openWin(){
+            // win = window.open();
+            // win = window.open("https://blog.darshanvirani.repl.co/");
+            // win = window.open("https://blog.darshanvirani.repl.co/", "_blank");
+            // win = window.open("https://blog.darshanvirani.repl.co/", "_parent");
+            win = window.open("https://blog.darshanvirani.repl.co/", "_blank", "top=10px, left=300px, width=480px, height=600px");
+        }
+
+        function closeWin(){
+            win.close();
+        }
+    </script>
+</body>
+</html>

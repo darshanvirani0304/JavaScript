@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Set Method</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <h1 id="headingId" class="heaingClass" style="border: 2px solid yellow;" onclick="setMethod()">This is Get Method</h1>
+        <p id="paraId" class="paraClass">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni amet aliquid ipsa, excepturi similique consectetur?</p>
+    </div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Set Method
+        (1) innerHTML
+        (2) innerText
+        (3) setAttribute
+        (4) attributes
+        (5) removeAttribute
+        
+        */
+
+        /* 
+        
+        innerHTML
+
+        */
+
+        console.log(">>>>>>>>>>>>>>>>>>>>> innerHTML <<<<<<<<<<<<<<<<<<<<");
+        let html1 = document.getElementById("headingId").innerHTML = "This is innerHTML Method";
+        console.log(html1);
+
+        /* 
+        
+        innerText
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>>>>>>>> innerText <<<<<<<<<<<<<<<<<<<<");
+        let text = document.getElementById("paraId").innerText = "This is Paragraph text and that is innerText Method."
+        console.log(text);
+
+        /* 
+        
+        setAttribute - It is set new Attribute
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>>>>>>>> setAttribute <<<<<<<<<<<<<<<<<<<<");
+        document.getElementById("headingId").setAttribute("id", "set_new_id");
+        document.getElementById("set_new_id").setAttribute("class", "set_new_class");
+        document.getElementById("set_new_id").setAttribute("style", "border : 2px solid green");
+        document.getElementById("set_new_id").setAttribute("onclick", "new_set_method()");
+
+        /* 
+        
+        attributes - It is set attribute using Index number
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>>>>>>>> attributes <<<<<<<<<<<<<<<<<<<<");
+        document.getElementById("set_new_id").attributes[0].value = "attr_id";
+        document.getElementById("attr_id").attributes[1].value = "attr_class";
+        document.getElementById("attr_id").attributes[2].value = "color : green";
+        document.getElementById("attr_id").attributes[3].value = "attr_setMethod()";
+
+        /* 
+        
+        removeAttribute - It is remove html attribute
+        
+        */
+
+        console.log(">>>>>>>>>>>>>>>>>>>>> removeAttribute <<<<<<<<<<<<<<<<<<<<");
+        document.getElementById("attr_id").removeAttribute("class");
+        document.getElementById("attr_id").removeAttribute("style");
+        document.getElementById("attr_id").removeAttribute("onclick");
+        document.getElementById("attr_id").removeAttribute("id");
+
+    </script>
+</body>
+</html>

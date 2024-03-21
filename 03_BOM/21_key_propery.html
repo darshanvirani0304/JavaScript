@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key Proprty</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /* .container{
+            width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid rgb(221, 221, 221);
+            border-radius: 10px;
+            padding: 20px;
+        } */
+
+        label{
+            font-weight: bold;
+        }
+
+        input[type=text]{
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0px;
+            border: 2px solid rgb(240, 240, 240);
+            border-radius: 10px;
+            outline-color: grey;
+        }
+
+        .car{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <!-- <label for="keybox">Enter any Value</label>
+        <input type="text" id="keyBox"> -->
+
+        <img src="https://i.pinimg.com/originals/dc/19/e9/dc19e9b94a372ebc21ffeb7623d5632a.png" alt="car" class="car">
+    </div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        key Property
+
+        It is use in Keybord Event - onkeydown
+        
+        */
+
+        // let target = document.querySelector("#keyBox");
+        // target.addEventListener("keydown", function(k){
+        //     let mykey = k.key;
+        //     console.log(mykey);
+        // })
+        let left = 0;
+        let up = 0;
+
+        document.querySelector("body").addEventListener("keydown", function(k){
+            let press = k.key;
+            let car = document.querySelector(".car");
+
+            switch(press){
+                case "ArrowRight":
+                    left += 20;
+                    car.style.transform = "scaleX(1)";
+                    break;
+                case "ArrowLeft":
+                    left -= 20;
+                    car.style.transform = "scaleX(-1)";
+                    break;
+                case "ArrowDown":
+                    up += 20;
+                    car.style.transform = "rotate(90deg)";
+                    break;
+                case "ArrowUp":
+                    up -= 20;
+                    car.style.transform = "rotate(-90deg)";
+                    break;
+            }
+
+            car.style.marginLeft = left + "px";
+            car.style.marginTop = up + "px";
+        })
+    </script>
+</body>
+</html>

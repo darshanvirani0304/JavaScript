@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and clearInterval</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) setInterval
+        (2) clearInterval
+
+        (1) setInterval
+            setInterval(function_name, millisecond)
+            setInterval same as loop
+            does't paush execution function
+
+        (2) clearInterval
+            - It is use for stop setInterval
+
+        */
+
+        // setInterval(function(){
+        //     alert("This is setInterval")
+        // }, 4000);
+
+        let moveBox = setInterval(move, 100)
+
+        let a = 0;
+        function move(){
+
+            if(a == 200){
+                clearInterval(moveBox);
+            }
+            else{
+                a = a + 10;
+                let box = document.querySelector(".box")
+                box.style.marginLeft = a + "px";
+                box.style.marginTop = a + "px";
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Button</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container{
+            width: 220px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid rgb(240, 240, 240);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(230, 230, 230);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">Press any Mouse Button</div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Mouse Button
+        (1) left Button         - return 0
+        (2) Middel Button       - return 1
+        (3) Right BUtton        - return 2
+
+        It is use in Mouse Event - onmousedown
+        
+        */
+
+        let target = document.querySelector(".container");
+        target.addEventListener("mousedown", function(b){
+            let btn = b.button;
+            let bgcolor;
+
+            switch(btn){
+                case 0:
+                    console.log("You Pressed Left button");
+                    bgcolor = "lightblue"
+                    break;
+                case 1:
+                    console.log("You Pressed Middel button");
+                    bgcolor = "lightgrey"
+                    break;
+                case 2:
+                    console.log("You Pressed Right button");
+                    bgcolor = "pink";
+                    break;
+                default:
+                    console.log("Enter Mouse BUtton");
+                    bgcolor = "lightgreen"; 
+            }
+
+            target.style.backgroundColor = bgcolor;
+            target.style.borderColor = bgcolor;
+            target.style.color = bgcolor;
+        })
+    </script>
+</body>
+</html>

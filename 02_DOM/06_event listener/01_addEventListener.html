@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="continer">
+        <button type="button" class="btn">Click Button</button>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>    
+        // let event = document.querySelector(".btn");
+        // event.addEventListener("click", function(){
+        //     let a = 10;
+        //     let b = 20;
+        //     let c = a + b 
+        //     console.log("Addition of Two Number is :", c);
+        // })
+
+
+        // let event = document.querySelector(".btn");
+        // event.addEventListener("click", addition);
+        // function addition(){
+        //     let a = 10;
+        //     let b = 20;
+        //     let c = a + b 
+        //     console.log("Addition of Two Number is :", c);
+        // }
+
+
+        // let event = document.querySelector(".btn").onclick = addition =>{
+        //     let a = 10;
+        //     let b = 20;
+        //     let c = a + b 
+        //     console.log("Addition of Two Number is :", c);
+        // }
+
+        
+        // let event = document.querySelector(".btn").onclick = function(){
+        //     let a = 10;
+        //     let b = 20;
+        //     let c = a + b 
+        //     console.log("Addition of Two Number is :", c);
+        // };
+
+        
+        let event = document.querySelector(".btn").onclick = addtion;
+        function addtion(){
+            let a = 10;
+            let b = 20;
+            let c = a + b 
+            console.log("Addition of Two Number is :", c);
+        }
+    </script>
+</body>
+</html>

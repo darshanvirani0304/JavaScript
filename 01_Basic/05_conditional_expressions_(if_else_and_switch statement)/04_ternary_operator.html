@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        condition? expressionIfTrue : expressionIfFalse;
+        (age >= 18)? "Crive Car." : "not Drive Car."
+        
+        */
+        let age = parseInt(prompt("Enter your age"));
+
+        // let getanswer = (age >= 18)? "You can Dirve Car." : "You can not Drive Car." 
+        // console.log(getanswer);+
+
+        console.log(`You can ${(age >= 18)? "Dirve Car." : "not Drive Car."}`);
+
+        /* 
+        
+        Using Multipal Turnary JavaSript Opewrator
+        
+        */
+
+        let speed = parseInt(prompt("Enter Your Speed"));
+        let message = (speed <= 35)? "Your Speed is Normal." : (speed <=  90)? "Your speed is Fast." : "Your speed is 90 Up means very Fast. please you can drive slow.";
+        console.log(message);
+    </script>
+</body>
+</html>

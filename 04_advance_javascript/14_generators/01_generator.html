@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Generator
+        
+        */
+
+        function *generator_fun(){
+            yield "This is first yield";
+            yield "This is Second yield";
+            yield "This is Third yield";
+            yield "This is Forth yield";
+            yield "This is Fifth yield";
+        }
+
+        let g = generator_fun();
+
+        // console.log(g);
+
+        // console.log(g.next());
+        // console.log(g.next());
+        // g.next()
+        // console.log("Third yield is not print in the console");
+        // console.log(g.next());
+        // console.log(g.next());
+        // console.log(g.next());
+
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+        // console.log(g.next().done);
+        // console.log(g.next().done);
+        // console.log(g.next().done);
+        // console.log(g.next().done);
+        // console.log(g.next().done);
+        // console.log(g.next().done);
+
+        /* 
+        
+        Using for...of loop
+        
+        */
+
+        for(let value of g){
+            console.log(value);
+        }
+
+    </script>
+</body>
+</html>

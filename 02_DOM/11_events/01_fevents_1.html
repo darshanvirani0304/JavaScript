@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event 1</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        .container{
+            height: 700px;
+        }
+    </style>
+</head>
+<body onresize="resize()">
+<!-- <body onscroll="scroll()"> -->
+<!-- <body onload="load()"> -->
+<!-- <body onunload="unload()"> -->
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <button type="button" onclick="single_click()">Click</button>
+        <button type="button" ondblclick="double_click()">Double Click</button>
+        <button type="button" oncontextmenu="rightclick()">Right Click</button>
+        <button type="button" onmouseenter="mousehover()">Mouse hover</button>
+        <button type="button" onmouseout="mouseout()">Mouse Out</button>
+        <button type="button" onmousedown="mousedown()">Mouse Down</button>
+        <button type="button" onmouseup="mouseup()">Mouse Up</button>
+        <button type="button" onkeypress="keypress()">Key Press</button>
+        <button type="button" onkeyup="keyup()">Key Up</button>
+        <button type="button" onkeydown="keydown()">Key Down</button>
+    </div>
+
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Events
+        -> Mouse Event
+        (1) Click               -> onclick
+        (2) Double Click        -> indblclick
+        (3) Right Click         -> oncontextmenu
+        (4) Mouse Hover         -> onmouseenter
+        (5) Mouse Out           -> onmouseout
+        (6) Mouse Down          -> onmouesdown
+        (7) Mouse Up            -> onmouseup
+        -> Keybord Event
+        (8) Key Press           -> onkeypress
+        (9) Key Up              -> onkeyup
+        (10) Key Down            -> onkeydown
+        -> Window Event
+        (11) resize             -> onresize
+        (12) scroll             -> onscroll
+        (13) Load               -> onload
+        (14) Unload             -> onunload
+        
+        */
+        
+        // click
+        function single_click(){
+            alert("This is Click Event");
+        }
+        
+        // dblclick
+        function double_click(){
+            alert("This is Double Click Event");
+        }
+        
+        // right click
+        function rightclick(){
+            alert("This is Right Click Event");
+        }
+        
+        // mouse hover
+        function mousehover(){
+            alert("This is Mouse Hover Event");
+        }
+        
+        // mouse out
+        function mouseout(){
+            alert("This is Mouse Out Event");
+        }
+        
+        // mouse up
+        function mouseup(){
+            alert("This is Mouse Up Event");
+        }
+        
+        // mouse down
+        function mousedown(){
+            alert("This is Mouse Down");
+        }
+        
+        // key press
+        function keypress(){
+            alert("This is Key Press Event");
+        }
+        
+        // key up
+        function keyup(){
+            alert("This is Key Up Event");
+        }
+
+        // key down
+        function keydown(){
+            alert("This is Key Down Event");
+        }
+
+        // resize
+        function resize(){
+            alert("This is Resize Event");
+        }
+
+        // scroll
+        function scroll(){
+            alert("This is Scroll Event")
+        }
+
+        // load
+        function load(){
+            alert("This is Load Event")
+        }
+
+        // unload
+        function unload(){
+            alert("This is Unload Event")
+        }
+        
+    </script>
+</body>
+</html>

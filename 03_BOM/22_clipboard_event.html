@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clipboard Event</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container{
+            width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid rgb(221, 221, 221);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input[type=text]{
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0px;
+            border: 2px solid rgb(240, 240, 240);
+            border-radius: 10px;
+            outline-color: grey;
+        }
+
+        p{
+            color: grey;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <label for="keybox">Enter any Value</label>
+        <input type="text" id="keyBox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, corrupti.</p>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Clipboard Event
+        (1) cut     - oncut
+        (2) copy    - oncopy
+        (3) paste   - onpaste
+        
+        */
+
+        let target = document.querySelector("body");
+        target.addEventListener("cut", function(){
+            console.clear();
+            console.log("You Cut Text.");
+        })
+        target.addEventListener("copy", function(){
+            console.clear();
+            console.log("You Copy Text.");
+        })
+        target.addEventListener("paste", function(){
+            console.clear();
+            console.log("You Paste Text.");
+        })
+    </script>
+</body>
+</html>

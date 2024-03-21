@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Object and Custome Error</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Error Object Propertys :
+        (1) name
+        (2) message
+        (3) stack
+        
+        */
+
+
+        try{
+            darshan;
+        }catch(error){
+            // console.log(error);
+            console.log(error.name);
+            console.log(error.message);
+            console.log(error.stack);
+        }
+
+
+        /* 
+        
+        throw error
+        
+        */
+
+        try{
+            throw new Error("This is Throw Error");
+            // throw new ReferenceError("This is Throw Error");
+            // throw new TypeError("This is Throw Error");
+        }catch(error){
+            console.log(error);
+        }
+
+        // ----- throw error example -----
+        try{
+            let age = 10;
+            // let age = 20;
+            if(age < 18){
+                throw new Error("Your Age is Not Valid");
+            }
+            else{
+                console.log(`Your Age is ${age}`);
+            }
+        }catch(error){
+            console.log(error);
+        }
+
+        
+
+    </script>
+</body>
+</html>

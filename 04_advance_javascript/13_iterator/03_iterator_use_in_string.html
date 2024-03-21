@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteratir use in String</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        let str = "Darshan Virani";
+
+        console.log(str);
+        console.log(typeof str);
+
+        let str2 = str[Symbol.iterator]();
+
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+        // console.log(str2.next());
+
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+        // console.log(str2.next().value);
+
+        // let result = str2.next();
+        // while(!result.done){
+        //     console.log(result.value);
+        //     result = str2.next();
+        // }
+
+        for(let s of str){
+            console.log(s);
+        }
+    </script>
+</body>
+</html>

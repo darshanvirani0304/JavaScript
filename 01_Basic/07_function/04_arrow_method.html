@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Method</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        let myfun = () => {
+            console.log("This is Arrow Function");
+        }
+
+        myfun();
+
+
+        // parameter arrow function and return value
+        let add = (a,b) => {
+            return a + b;
+        }
+
+        console.log("Addition is :", add(10,10));
+
+
+        // simple single line arrow function
+        let simplearrow = a => console.log(a*a);
+        console.log(simplearrow(10));
+
+
+        // arrow function use object
+        let obj = {
+            roll_no : 1,
+            name : "Darshan Virani",
+            arrow_fun : function(){
+                console.log(`Student Roll no is ${this.roll_no} and Name is ${this.name}.`);
+            }
+        }
+
+        obj.arrow_fun();
+
+
+        
+    </script>
+</body>
+</html>

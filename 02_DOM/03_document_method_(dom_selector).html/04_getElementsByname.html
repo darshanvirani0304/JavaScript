@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByName</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <input type="text" name="name" value="Darshan">
+        <input type="text" name="name" value="Virani">
+        <p class="total"></p>
+        <p class="total2"></p>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        let form = document.getElementsByName("name");
+        let total = document.querySelector(".total");
+        total.innerHTML = form[0].tagName;
+
+        let total2 = document.querySelector(".total2");
+        let form2 = document.getElementsByName("name").length;
+        total2.innerHTML = form2;
+
+    </script>
+</body>
+</html>

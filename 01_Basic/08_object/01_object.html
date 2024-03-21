@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        JavaScript Object is Similar to JSON
+        (1) number
+        (2) String
+        (3) Array
+        (4) Null
+        (5) Undefind
+        (6) object
+        
+        */
+        let obj = {
+            id : 1,
+            name : "Raj",
+            address : {
+                streert : "B-17, Rupam society",
+                area : "Hirabaugh",
+                city : "Surat",
+                pincode : 395006
+            },
+            marks : [43, 64, 78, 75, 77],
+            result : true,
+            detail : undefined
+        }
+
+        console.log(obj);
+
+        for(let a in obj){
+            console.log(obj[a]);
+            // console.log(a);
+        }
+
+        // address
+        console.log(">>>> Address <<<<");
+        for(let a in obj.address){
+            console.log(obj.address[a])
+        }
+
+        // marks
+        console.log(">>>> Marks <<<<");
+        for(let b in obj.marks){
+            console.log(obj.marks[b]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Object</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <button type="button" class="btn1">Blog website</button>
+    <button type="button" class="btn2">google</button>
+    <button type="button" onclick="assignpage()">Assign</button>
+    <button type="button" onclick="reloadpage()">Reload</button>
+    <button type="button" onclick="replacepage()">Replace</button>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Object Model
+        - url bar is location bar
+
+        Location Property
+        (1) hash
+        (2) host
+        (3) hostname
+        (4) href
+        (5) origin
+        (6) pathname
+        (7) port
+        (8) protocol
+        (9) search
+
+        location Method
+        (1) assign()    - set new url in the url bar        - new assign page
+        (2) reload()    - refresh page
+        (3) replace()   - same as reload but not goto back your home page - delete back history         - replace old page to new page
+        
+        */
+
+        /* 
+        
+        Location Property
+        
+        */
+
+        console.log(location);
+        console.log(location.host);
+        console.log(location.hostname);
+        console.log(location.href);
+        console.log(location.port);
+        console.log(location.protocol);
+        console.log(location.origin)
+        console.log(location.pathname)
+        console.log(location.hash);         // http://localhost:5500/BOM/location_object.html#first -> return -> #first
+        console.log(location.search);       // http://localhost:5500/BOM/location_object.html/?page=one -> return -> ?page=one
+        
+
+        /* 
+        
+        set href method
+        
+        */
+       
+        document.querySelector(".btn1").addEventListener("click", function(){
+           location.href = "https://blog.darshanvirani.repl.co/"
+        })
+        
+        document.querySelector(".btn2").onclick = newpage =>{
+            location.href = "https://google.com";
+        }
+
+        /* 
+        
+        Location Method
+        
+        */
+
+        // reload()
+        function reloadpage(){
+            location.reload();
+        }
+
+        // assign()
+        function assignpage(){
+            location.assign("https://google.com");
+        }
+
+        // replace()
+        function replacepage(){
+            location.replace("https://google.com");
+        }
+        
+
+    </script>
+</body>
+</html>

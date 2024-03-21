@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Iterator</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Create own Iterator
+        
+        */
+
+        function arrIterator(num){
+            let nextNum = 0;
+            return{
+                next(){
+                    if(nextNum < num.length){
+                        return{
+                            value : num[nextNum++],
+                            done : false
+                        }
+                    }
+                    else{
+                        return{
+                            done : true
+                        }
+                    }
+                }
+            }
+        }
+
+        let arr = [1, "Darshan Virani", "JavaScript"];
+
+        let arr2 = arrIterator(arr);
+
+        console.log(arr2.next());
+        console.log(arr2.next());
+        console.log(arr2.next());
+        console.log(arr2.next());
+
+        // console.log(arr2.next().value);
+        // console.log(arr2.next().value);
+        // console.log(arr2.next().value);
+        // console.log(arr2.next().value);
+
+        // console.log(arr2.next().done);
+        // console.log(arr2.next().done);
+        // console.log(arr2.next().done);
+        // console.log(arr2.next().done);
+
+    </script>
+</body>
+</html>

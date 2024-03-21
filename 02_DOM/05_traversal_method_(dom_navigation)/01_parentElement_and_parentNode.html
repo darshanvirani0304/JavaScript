@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parentElement and parentNode</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .box{
+            margin: 20px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        >>>> parentElement
+        
+        */
+
+        // document.querySelector(".box").parentElement.style.backgroundColor = "lightgreen";
+        let pe1 = document.querySelector(".box").parentElement;
+        console.log(">> parentElement :", pe1);
+
+        document.querySelector(".container").parentElement.style.backgroundColor = "lightgrey";
+        let pe2 = document.querySelector(".container").parentElement;
+        console.log(">> parentElement :", pe2);
+
+        let pe3 = document.querySelector("html").parentElement;
+        console.log(">> parentElement :", pe3);
+
+        /* 
+        
+        >>>> parentNode
+        
+        */
+
+        document.querySelector(".box").parentNode.style.backgroundColor = "lightgreen";
+        let pn1 = document.querySelector(".box").parentNode;
+        console.log(">> parentNode : ", pn1);
+
+        document.querySelector(".container").parentNode.style.backgroundColor = "lightgrey";
+        let pn2 = document.querySelector(".container").parentNode;
+        console.log(">> parentNode : ", pn2);
+
+        let pn3 = document.querySelector("html").parentNode;
+        console.log(">> parentNode : ", pn3);
+    </script>
+</body>
+</html>

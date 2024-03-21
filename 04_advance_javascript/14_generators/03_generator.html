@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        Generator
+        
+        */
+
+        function *generator_fun(){
+            // let result = yield;
+            // let result = (yield) * 10;
+            let result = [(yield) * 10 , yield, yield];             // Using Array
+            console.log(`Result : ${result}`);
+            console.log(`Result : ${result[0]}`);                   // Give particular value
+            console.log(`Result : ${result[1]}`);
+            console.log(`Result : ${result[2]}`);
+        }
+
+        let g = generator_fun();
+        g.next();
+        g.next(100);                                                // You can give any type of value
+        g.next("First");
+        g.next(null);
+        g.next(400);
+
+        function *generator_fun2(){
+            yield 100;
+            yield [1, "Darshan Virani", "JavaScript"];
+            yield* [1, "Darshan Virani", "JavaScript"];            // use * symbol to give particular value for this array
+        }
+
+        let g2 = generator_fun2();
+        console.log(g2.next());
+        console.log(g2.next());
+
+        console.log(g2.next().value);
+        console.log(g2.next().value);
+        console.log(g2.next().value);
+        console.log(g2.next().value);
+    </script>
+</body>
+</html>

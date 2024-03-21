@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window scrollBy and scrollTo</title>
+    <!--------------------------- bootstrap icon link --------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .arrow{
+            position: fixed;
+            bottom: 4%;
+            right: 2%;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(87, 28, 180);
+            transition: .5s;
+            opacity: 1;
+        }
+        
+        .arrow i{
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            background-color: rgb(87, 28, 180);
+            transition: .5s;
+        }
+
+        .arrow:hover, .arrow:hover i{
+            background-color: rgb(44, 10, 97);
+        }
+
+        .container{
+            margin: 0px 150px;
+            /* width: 4000px; */
+        }
+
+        img{
+            width: 100%;
+        }
+
+        h1, h2, p, li, img{
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="arrow">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+
+    <div class="container">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, perspiciatis!</h1>
+        <img src="https://images.unsplash.com/photo-1571310100246-e0676f359b42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt commodi quae eius omnis vero perspiciatis debitis quidem dolore, doloremque, corrupti saepe accusamus eos expedita et alias mollitia. Cupiditate debitis enim, aut maiores, labore ea hic tenetur soluta ratione explicabo, voluptatum praesentium ad repudiandae error quisquam nemo illum sequi tempora quaerat placeat vel? Veritatis nobis culpa laborum excepturi pariatur perferendis quae natus quia ea recusandae eos fugiat aspernatur inventore rem veniam dolorum adipisci, dolore vel, quisquam, voluptatum nisi numquam possimus vero architecto. Itaque maiores ducimus dolor in voluptatum ad nesciunt, reprehenderit iusto ullam dolorem? Mollitia velit vero placeat modi blanditiis distinctio, odio minus? Voluptates tenetur nulla ex aliquid consectetur iure, velit perferendis magnam eius, enim voluptate ut, unde molestias minus fuga accusantium error. Asperiores laboriosam dolorem tenetur. Officia quos reiciendis dolorum? Ipsum nesciunt vitae, aperiam error blanditiis ut veritatis possimus explicabo cum dolorum ad voluptatibus sapiente voluptate dolorem. Facere perferendis explicabo, repellat repudiandae sequi magni beatae nihil sint. Tempora, debitis asperiores aspernatur corporis impedit eos placeat perferendis excepturi consectetur atque qui cum tenetur exercitationem voluptates, labore in nihil. Tenetur ducimus, rem libero delectus asperiores magnam sequi nemo deleniti! Aliquid veniam eius obcaecati aperiam, magni, reprehenderit, cum ipsam voluptate amet itaque in!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corrupti fuga quas quia ea at ratione dolores quaerat fugiat laudantium earum sunt dolore obcaecati assumenda a, corporis rerum, consectetur accusantium minima amet aliquam architecto. Perspiciatis, mollitia officiis repudiandae incidunt porro alias veritatis adipisci necessitatibus quas. Officia ea eligendi facilis veniam.</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At harum itaque quasi, voluptates dolorum repellendus? Expedita adipisci voluptate unde culpa reiciendis sequi, et in aperiam. Dicta reprehenderit perferendis necessitatibus ipsam vitae nisi excepturi assumenda. Minima aliquid esse illum laudantium, nihil ex hic explicabo facere, laboriosam possimus perferendis, est voluptas cupiditate?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam quos atque omnis sequi mollitia ab eligendi aspernatur sunt neque ad, obcaecati ipsam, iure maiores laboriosam ut! Quae labore perspiciatis tenetur omnis reprehenderit alias culpa autem veniam optio, impedit earum, dicta eius vero enim amet voluptas quas deleniti, iusto maxime?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate porro vitae tempore minus facere praesentium dolores vero nesciunt, perspiciatis est rerum, ipsa distinctio nam eveniet expedita cumque ab ad iure fuga. Enim dolor deleniti amet ex officia numquam ab, quasi tenetur natus quod ipsam, laboriosam eos nemo excepturi alias explicabo cum, accusamus rerum eveniet aperiam. Culpa nulla ratione beatae itaque dolorem ea cum velit deleniti voluptate! Porro minus minima optio iure dicta, illo aperiam, voluptates hic earum sed labore in sint aut alias molestiae modi? Hic, illum nam ex accusamus placeat nobis molestiae, harum sapiente doloremque ducimus similique iure.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi atque, nesciunt reiciendis maxime inventore, possimus sapiente molestias nobis illum laboriosam voluptatum non sunt illo earum minima! Saepe, modi impedit! Odit dolorem, nesciunt voluptatum iusto voluptates consequatur iste nihil a delectus voluptate? Rerum, unde voluptatibus? Repellat similique vero adipisci nihil cupiditate harum omnis voluptatem amet ipsa tempore. Id neque magni quas quos consectetur facere voluptatum nemo veniam tenetur in iure labore consequatur atque, expedita blanditiis laborum alias placeat rem adipisci at.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At harum itaque quasi, voluptates dolorum repellendus? Expedita adipisci voluptate unde culpa reiciendis sequi, et in aperiam. Dicta reprehenderit perferendis necessitatibus ipsam vitae nisi excepturi assumenda. Minima aliquid esse illum laudantium, nihil ex hic explicabo facere, laboriosam possimus perferendis, est voluptas cupiditate?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam quos atque omnis sequi mollitia ab eligendi aspernatur sunt neque ad, obcaecati ipsam, iure maiores laboriosam ut! Quae labore perspiciatis tenetur omnis reprehenderit alias culpa autem veniam optio, impedit earum, dicta eius vero enim amet voluptas quas deleniti, iusto maxime?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate porro vitae tempore minus facere praesentium dolores vero nesciunt, perspiciatis est rerum, ipsa distinctio nam eveniet expedita cumque ab ad iure fuga. Enim dolor deleniti amet ex officia numquam ab, quasi tenetur natus quod ipsam, laboriosam eos nemo excepturi alias explicabo cum, accusamus rerum eveniet aperiam. Culpa nulla ratione beatae itaque dolorem ea cum velit deleniti voluptate! Porro minus minima optio iure dicta, illo aperiam, voluptates hic earum sed labore in sint aut alias molestiae modi? Hic, illum nam ex accusamus placeat nobis molestiae, harum sapiente doloremque ducimus similique iure.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi atque, nesciunt reiciendis maxime inventore, possimus sapiente molestias nobis illum laboriosam voluptatum non sunt illo earum minima! Saepe, modi impedit! Odit dolorem, nesciunt voluptatum iusto voluptates consequatur iste nihil a delectus voluptate? Rerum, unde voluptatibus? Repellat similique vero adipisci nihil cupiditate harum omnis voluptatem amet ipsa tempore. Id neque magni quas quos consectetur facere voluptatum nemo veniam tenetur in iure labore consequatur atque, expedita blanditiis laborum alias placeat rem adipisci at.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At harum itaque quasi, voluptates dolorum repellendus? Expedita adipisci voluptate unde culpa reiciendis sequi, et in aperiam. Dicta reprehenderit perferendis necessitatibus ipsam vitae nisi excepturi assumenda. Minima aliquid esse illum laudantium, nihil ex hic explicabo facere, laboriosam possimus perferendis, est voluptas cupiditate?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam quos atque omnis sequi mollitia ab eligendi aspernatur sunt neque ad, obcaecati ipsam, iure maiores laboriosam ut! Quae labore perspiciatis tenetur omnis reprehenderit alias culpa autem veniam optio, impedit earum, dicta eius vero enim amet voluptas quas deleniti, iusto maxime?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate porro vitae tempore minus facere praesentium dolores vero nesciunt, perspiciatis est rerum, ipsa distinctio nam eveniet expedita cumque ab ad iure fuga. Enim dolor deleniti amet ex officia numquam ab, quasi tenetur natus quod ipsam, laboriosam eos nemo excepturi alias explicabo cum, accusamus rerum eveniet aperiam. Culpa nulla ratione beatae itaque dolorem ea cum velit deleniti voluptate! Porro minus minima optio iure dicta, illo aperiam, voluptates hic earum sed labore in sint aut alias molestiae modi? Hic, illum nam ex accusamus placeat nobis molestiae, harum sapiente doloremque ducimus similique iure.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi atque, nesciunt reiciendis maxime inventore, possimus sapiente molestias nobis illum laboriosam voluptatum non sunt illo earum minima! Saepe, modi impedit! Odit dolorem, nesciunt voluptatum iusto voluptates consequatur iste nihil a delectus voluptate? Rerum, unde voluptatibus? Repellat similique vero adipisci nihil cupiditate harum omnis voluptatem amet ipsa tempore. Id neque magni quas quos consectetur facere voluptatum nemo veniam tenetur in iure labore consequatur atque, expedita blanditiis laborum alias placeat rem adipisci at.</li>
+        </ul>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ad tempora a quasi quae provident veritatis officia nobis cupiditate corrupti.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo cupiditate aut fuga inventore sequi quo pariatur facere dignissimos blanditiis aliquid? Aut hic architecto laudantium, porro minus sit recusandae illo voluptatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptate eius velit facere rem quos fugiat consequuntur maiores, eaque animi assumenda fuga hic accusamus quam commodi nam ad, asperiores cum quisquam? Asperiores tenetur dolores iusto ea vero aliquam reiciendis eligendi ut earum, perspiciatis sequi. Saepe nostrum repellendus dolore dolorum et repudiandae repellat officiis incidunt veniam perspiciatis officia optio, deleniti placeat nobis, iste eaque, consectetur ducimus tempore doloribus amet ipsum provident? Necessitatibus, sit corrupti rerum officia temporibus fugiat rem! Nam similique eligendi, recusandae cupiditate iusto unde at expedita nisi, distinctio ipsum molestias voluptas neque quas aut perferendis est voluptates molestiae. Excepturi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias ex saepe ut iste quae? Dolorum, quidem? Blanditiis aliquam provident adipisci? Nisi nostrum expedita fuga velit ducimus cum veniam sint temporibus beatae libero eius alias repellendus quidem aperiam culpa, laborum nobis doloremque minus et. Vel possimus nulla necessitatibus eligendi magni deleniti inventore, quod in! In est laboriosam assumenda, similique doloremque inventore natus itaque eius. Accusamus, fuga dolorum pariatur tempore vitae eius quae qui sequi voluptas sed voluptate, amet delectus nulla beatae? Sint, maxime blanditiis reiciendis debitis totam hic eius quaerat voluptatum, incidunt libero temporibus eligendi error ad et soluta! Nesciunt nisi commodi et explicabo expedita nobis fugit dicta molestiae aliquam, a dolore quaerat distinctio dignissimos quis ducimus deleniti! Ea at dolores, aperiam, ipsa, eveniet fugit asperiores nulla non quasi nihil rerum. Sit nam earum placeat neque repellat, alias fuga veritatis aut ut rerum ullam necessitatibus dolore minus, a omnis. Consequatur sequi quibusdam minus dolorem velit natus repudiandae voluptates similique neque, possimus accusantium, quia laudantium deserunt sint esse voluptatibus iste pariatur hic nulla? Aspernatur nostrum, nihil eveniet, reprehenderit iure nisi cupiditate earum itaque at, illum vitae ab! Accusamus iusto doloremque voluptatum neque. Adipisci dolore, animi tempore optio facere sapiente voluptatum architecto.</p>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        scrollBy    -   position relative - (x,y)   - You can give positive and nagative value
+        scrollTo    -   position absolute - (x,y)
+        
+        */
+
+        let arrow = document.querySelector(".arrow").addEventListener("click", () =>{
+            // window.scrollBy(0,50);
+            // window.scrollBy(50,0);
+            // window.scrollBy(50,50);
+            // window.scrollBy(0,-50);
+            // window.scrollBy(-50,0);
+            // window.scrollBy(-50,-50);
+
+            // window.scrollTo(0,0);
+            // window.scrollTo(0,50);
+            window.scrollTo(50,0);
+            // window.scrollTo(50,50);
+        })
+    </script>
+</body>
+</html>

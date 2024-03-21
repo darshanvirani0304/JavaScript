@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Method</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        fetch 
+        
+        */
+
+        fetch("./01_information.txt").then((response) =>{
+            console.log(response.status);
+            return response.text();
+        }).then((data) =>{
+            console.log(data);
+            document.write(data);
+        }).catch(() =>{
+            console.log("Can't Fetch Data");
+        })
+        
+    </script>
+</body>
+</html>

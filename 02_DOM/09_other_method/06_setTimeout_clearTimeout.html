@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and clearTimeout</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <div class="box"></div>
+        <button type="button" class="stopbtn">clearTimeout</button>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) setTimeout
+        (2) clearTimeout
+
+        (1) setTimeout
+            settimeout(function_name, milisecond)
+            It is Execute one for one time
+
+        (2) clearTimeout
+            It is use for stop setTimeout
+         
+        */
+
+        // setTimeout(function(){
+        //     alert("This is setTimeout");
+        // }, 4000)
+
+        let animation = setTimeout(ani, 2000);
+        function ani(){
+            let size = document.querySelector(".box");
+            size.style.width = "200px";
+            size.style.height = "200px";
+            console.log("Increase Width and Height");
+        }
+
+        let stop = document.querySelector(".stopbtn").addEventListener("click", function(){
+            clearTimeout(animation);
+            console.log("Stop Executed...");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        html, body{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            box-shadow: 0px 0px 20px white;
+            border-radius: 100%;
+        }
+
+        .btn{
+            margin-top: 6vw;
+            width: 80px;
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(255, 187, 0);
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <div class="box"></div>
+        <button type="button" class="btn">MOON</button>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        let btn = document.querySelector(".btn");
+        let blub = document.querySelector(".box");
+
+        let flag = 0;
+
+        btn.addEventListener("click", function(){
+            if(flag == 0){
+                blub.style.backgroundColor = "rgb(255, 187, 0)";
+                blub.style.boxShadow = "0px 0px 20px rgb(255, 187, 0)";
+                btn.innerHTML = "MOON";
+                flag = 1;
+            }
+            else{
+                blub.style.backgroundColor = "white";
+                blub.style.boxShadow = "0px 0px 20px white";
+                btn.innerHTML = "SUN";
+                flag = 0;
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>className Method</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .head1{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border-radius: 20px;
+        }
+        
+        .para1{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <h1></h1>
+        <p></p>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        className Method
+        - It is use for give class name any HTML tag
+        - old class name is remove and replace new class name
+        
+        */
+
+        let head = document.querySelector("h1").className = "head1 head2";
+        let para = document.querySelector("p").className = "para1 para2";
+
+        // let new_head = document.querySelector(".head1").className = "new_head";
+        // let new_para = document.querySelector(".para1").className = "new_para";
+
+        // let box = document.querySelector(".container").className = "box";
+
+    </script>
+</body>
+</html>

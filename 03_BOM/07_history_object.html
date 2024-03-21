@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object</title>
+    <!--------------------------- bootsrap icon link --------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--------------------------- style --------------------------->
+    <style>
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container i{
+            border: 2px solid rgb(230, 230, 230);
+            padding: 12px;
+            font-size: 26px;
+            margin: 0px 20px;
+        }
+
+        .left-arrow:hover, .right-arrow:hover, .left-right:hover{
+            background-color: rgb(230, 230, 230);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <i class="bi bi-arrow-left left-arrow"></i>
+        <i class="bi bi-arrow-right right-arrow"></i>
+        <i class="bi bi-arrow-left-right left-right"></i>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        History Object
+        
+        History Object Protety
+        (1) length
+
+        History Object Method
+        (1) Back()
+        (2) forward()
+        (3) go()                '-' value is back() and '+' value is forward()
+        
+        */
+
+        console.log(history);
+        console.log("Length :", history.length);
+
+        /* 
+        
+        History Object method
+        
+        */
+
+        // Back()
+        document.querySelector(".left-arrow").addEventListener("click", function(){
+            history.back();
+        })
+
+
+        // forward()
+        document.querySelector(".right-arrow").addEventListener("click", function(){
+            history.forward();
+        })
+
+
+        // go()
+        document.querySelector(".left-right").addEventListener("click", function(){
+            history.go(-1);      // backward <
+            // history.go(-2);      // backward <
+            // history.go(-3);      // backward <
+
+
+            // history.go(1);       // forward >
+            // history.go(2);       // forward >
+            // history.go(3);       // forward >
+            // history.go(4);       // forward >
+        })
+
+
+
+    </script>
+</body>
+</html>

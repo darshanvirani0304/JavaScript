@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try...catch</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        try{
+            console.log("This Try...catch error block");
+            // darshan;
+            tryfunction();
+
+            // const a = 10;
+            // a = 20;
+
+            console.log("End Try Block");   
+        }catch(error){
+            // console.log(error);
+            if(error instanceof ReferenceError){
+                console.log("This is ReferenceError");
+            }
+            else if(error instanceof TypeError){
+                console.log("This is TypeError");
+            }
+            else{
+                console.log("Unknown Error");
+            }
+        }
+    </script>
+</body>
+</html>

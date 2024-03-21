@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList Method</title>
+    <!--------------------------- style --------------------------->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .cardLight{
+            width: 700px;
+            background-color: rgb(240, 240, 240);
+            border: 2px solid rgb(240, 240, 240);
+            border-radius: 20px;
+            color: black;
+            padding: 20px;
+        }
+
+        .cardDark{
+            width: 700px;
+            background-color: rgb(24, 24, 24);
+            border: 2px solid rgb(24, 24, 24);
+            border-radius: 20px;
+            color: white;
+            padding: 20px;
+        }
+
+        p{
+            margin: 10px 0px;
+        }
+
+        .lightbtn{
+            display: block;
+            padding: 6px 26px;
+            margin: 15px auto 0px auto;
+            font-size: 16px;
+            background-color: lightblue;
+            border: 2px solid lightblue;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .darkbtn{
+            background-color: lightgrey;
+            border: 2px solid lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <div class="cardLight first second third">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita esse recusandae facere laborum odit? Ipsa, eum ad exercitationem atque commodi doloribus nulla excepturi nobis, blanditiis, animi asperiores quibusdam! Numquam incidunt corrupti praesentium, velit accusamus corporis itaque tempora impedit, aspernatur et accusantium alias tenetur facilis dolor rerum, repudiandae porro. Dolore, atque?</p>
+            <button type="button" class="lightbtn">Click btn</button>
+        </div>
+    </div>
+
+
+    <!--------------------------- style --------------------------->
+    <script>
+        /* 
+        
+        classList
+        (1) add()
+        (2) remove()
+        (3) toggle()
+        (4) contains()
+        (5) item(index)
+        (6) length
+
+        (1) add()
+            add(class1, class2)
+        
+        (2) remove()
+            remove(class1, class2)
+
+        (3) toggle()
+            toggle(class1)
+            toggle() is Combination of add class and remove class
+
+        (4) itme(index)
+            It is use to get class name
+
+        (5) length
+            It is use to get cladd length
+
+        (6) contains()
+            contains(class_name)
+            It is use to check class for class is exit or not 
+            Exit class return       >>     true
+            Not Exit class return   >>     false    
+
+        
+        */
+
+        let mode1 = document.querySelector(".lightbtn");
+        
+        mode1.addEventListener("click", function(){
+            let mode2 = document.querySelector(".cardLight").classList;
+            // mode2.add("cardDark");
+            // mode1.classList.add("darkbtn");
+
+            // mode2.remove("cardLight");
+            // mode1.classList.remove("cardLight");
+
+            mode2.toggle("cardDark");
+            mode1.classList.toggle("darkbtn");
+
+            
+        })
+        
+        /* 
+        
+        item(index) - It is use to get class name
+
+        */
+
+        let mode2 = document.querySelector(".cardLight").classList
+        console.log("Class 1 :", mode2.item(0));
+        console.log("Class 2 :", mode2.item(1));
+        console.log("Class 3 :", mode2.item(2));
+        console.log("Class 4 :", mode2.item(3));
+
+        /* 
+        
+        length - It is use to get class length
+        
+        */
+
+        console.log(mode2.length);
+
+        /* 
+        
+        contains()
+        - It is use to check class for class is exit or not 
+        - Exit class return       >>     true
+        - Not Exit class return   >>     false 
+        
+        */
+
+       console.log(mode2.contains("cardLight"));
+       console.log(mode2.contains("first"));
+       console.log(mode2.contains("second"));
+       console.log(mode2.contains("third"));
+       console.log(mode2.contains("First"));
+
+    </script>
+</body>
+</html>

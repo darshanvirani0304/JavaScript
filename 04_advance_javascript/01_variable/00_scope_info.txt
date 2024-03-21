@@ -1,0 +1,37 @@
+scope
+var     --> Global Scope
+let     --> Block Scope
+const   --> Block Scope
+
+
+JavaScript Scope
+(1) Block Scope                                 --> local
+(2) Function Scope                              --> local
+(3) Global Scope
+
+
+--> Global Scope
+let a = 10;
+function myfun(){
+    console.log(10);
+}
+
+myfun();
+
+
+--> function Scope
+function myfun(){
+    let a = 10;
+    console.log(10);
+}
+
+myfun();
+// console.log(a);    // Give Error - It is Function Scope
+
+
+--> Block scope
+{
+    var a = 10;
+}
+
+console.log(a);

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch method</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        fetch data using json file
+        
+        */
+
+        fetch("./02_information.json").then((response) =>{
+            console.log(response.status);
+            return response.json();
+        }).then((data) =>{
+            console.log(data);
+            document.write("<table border=1>");
+                document.write("<tr>");
+                    document.write("<th>Roll No</th>");
+                    document.write("<th>Name</th>");
+                    document.write("<th>Langauge</th>");
+                document.write("</tr>");
+                for(let a in data){
+                        document.write("<tr>")
+                        document.write(`<td> ${data[a].id} </td>`);
+                        document.write(`<td> ${data[a].name} </td>`);
+                        document.write(`<td> ${data[a].language} </td>`);
+                        document.write("</tr>");
+                    }
+            document.write("</table>");
+        }).catch(() =>{
+            console.log("Can't fetch Data");
+        })
+    </script>
+</body>
+</html>

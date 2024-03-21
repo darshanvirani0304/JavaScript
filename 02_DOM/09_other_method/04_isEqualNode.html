@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isEqualNode</title>
+</head>
+<body>
+    <!--------------------------- html --------------------------->
+    <div class="container">
+        <ul class="list1">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Forth</li>
+        </ul>
+        <ul class="list2">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Forth</li>
+        </ul>
+    </div>
+
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) isEuqalNode
+            - It is Check node
+            - same node type, node vlaue, childNodes, attributes, attribute values
+        
+        */
+
+        // let list1 = document.querySelector(".list1").firstElementChild;
+        // let list2 = document.querySelector(".list2").firstElementChild;
+        // let equal = list1.isEqualNode(list2);
+        // console.log(equal);
+
+        let list1 = document.querySelector(".list1").childNodes[0];
+        let list2 = document.querySelector(".list2").childNodes[0];
+        let equal = list1.isEqualNode(list2);
+        console.log(equal);
+
+        // let list1 = document.querySelector(".list1").children[0];
+        // let list2 = document.querySelector(".list2").childNodes[0];
+        // let equal = list1.isEqualNode(list2);
+        // console.log(equal);
+        
+    </script>
+</body>
+</html>

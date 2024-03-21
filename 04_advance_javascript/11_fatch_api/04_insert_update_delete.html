@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert, Update and Delete</title>
+</head>
+<body>
+    <!--------------------------- script --------------------------->
+    <script>
+        /* 
+        
+        (1) Insert - POST
+        (2) UPDATE - PUT
+        (3) DELETE - DELETE
+        
+        */
+       
+        let obj = {
+            userId : 10,
+            id : "111",
+            title : "This is My Data",
+            body : "Hi, I am Learning JavaScript Language"
+        }
+
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+            method : "POST",
+            body : JSON.stringify(obj),
+            headers : {
+                "Content-type" : "application/json",
+            }
+        }).then((response) =>{
+            console.log(response.status);
+            return response.json();
+        }).then((data) =>{
+            console.log(data);
+        })
+
+
+        /* 
+        
+        UPDATE - PUT
+        
+        */
+
+        fetch("https://jsonplaceholder.typicode.com/posts/1", {
+            method : "PUT",
+            body : JSON.stringify({
+                userId : 10,
+                id : "111",
+                title : "This is My Data",
+                body : "Hi, I am Learning JavaScript Language"
+            }),
+            headers : {
+                "Content-type" : "application/json",
+            }
+        }).then((response) =>{
+            return response.json();
+        }).then((data) =>{
+            console.log(data);
+        })
+
+
+        /* 
+        
+        DELETE
+        
+        */
+
+        fetch("https://jsonplaceholder.typicode.com/posts/1", {
+            method : "DELETE"
+        }).then((response) =>{
+            return response.json();
+        }).then((data) =>{
+            console.log(data);
+        })
+
+    </script>
+</body>
+</html>

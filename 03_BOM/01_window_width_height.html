@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window width and height</title>
+</head>
+<body onresize="resizevalue()">
+    <!--------------------------- script --------------------------->
+    <script>    
+        /* 
+        
+        Window Width and Height
+        (1) innerWidth
+        (2) outerWidth
+        (3) innerHeight
+        (4) outerHeight
+        
+        */
+
+        function resizevalue(){
+            console.clear();
+
+            // innerWidth
+            let iwidth = window.innerWidth;
+            console.log("innerWidth :", iwidth);
+    
+    
+            // outerWidth
+            let owidth = window.outerWidth
+            console.log("outerWidth : ", owidth);
+    
+    
+            // innerHeight
+            let iheight = window.innerHeight;
+            console.log("innerHeight : ", iheight);
+            
+            
+            // outerHeight
+            let oheight = window.outerHeight;
+            console.log("outerHeight :", oheight);
+        }
+
+    </script>
+</body>
+</html>
