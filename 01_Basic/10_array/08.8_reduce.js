@@ -1,3 +1,14 @@
+/*
+
+    Reduce Method
+    variable_name.reduce((previousValue, currentValue, currentIndex, array) =>{
+        return previousValue + currentValue;
+    }, 0);
+
+    0 -> is Initial Value
+
+*/
+
 let product = [
     {
         "id": 1,
